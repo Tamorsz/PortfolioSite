@@ -4,16 +4,35 @@
         <title>Portfolio of Tamás Orosz</title>
         <style>
             body{background-color: rgb(49, 54, 63);}
-            h1 {color: rgb(118, 171, 174);}
-            h2 {color: rgb(118, 171, 174);}
+            th {color: rgb(118, 171, 174); font-size: x-large;}
+            td {color: rgb(118, 171, 174);}
             p {color: rgb(238, 238, 238);}
             a {color: rgb(118, 171, 174); text-decoration: none;}
             a:hover {text-decoration: underline;}
         </style>
     </head>
     <body>
-        <h1>Hello there!</h1>
-        <p>This is my programming portfolio!</p>
-        <h2><a href="GamesSite.html">My games</a></h2>
+        <table style="width: 100%;">
+            <tr>
+                <td style="width: 10%;"><img src="logo.png" alt="logo" width="200"></td>
+                <th style="width: 90%;">Hello there!</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>This is my programming portfolio</td>
+            </tr>
+            <tr>
+                <td><input type="button" value="My games" onclick="ToLink('GamesSite.html')" ></td>
+                <td></td>
+            </tr>
+
+        </table>
+
+        <script>
+            function ToLink(link)
+            {
+                window.location.href = link
+            }
+        </script>
     </body>
 </html>
